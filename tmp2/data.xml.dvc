@@ -1,0 +1,11 @@
+md5: ba955ee6b05f0198ecf09eb213af9875
+frozen: true
+deps:
+- path: data/data.xml
+  repo:
+    url: https://github.com/aadehamid/dvc-trials.git
+    rev_lock: 9d1dc04a7342d126a390682e606591efa28097ac
+outs:
+- md5: a304afb96060aad90176268345e10355
+  size: 37891850
+  path: data.xml
