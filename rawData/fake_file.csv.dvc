@@ -1,0 +1,4 @@
+outs:
+- md5: de395ed131e39989a551e4be0390fa2e
+  size: 321
+  path: fake_file.csv
