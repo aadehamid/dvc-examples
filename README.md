@@ -97,5 +97,24 @@ $ cat newTxt.txt     # display the new text in the target directory
 $ cat newData/newTxt.txt # display the old file in the source directroy.
 
 $ git pull # update the source directory to reflect the changes
-$ # youshould now have a
+
+$ # back to the target directory
+$  git checkout <SHA1> before the file is modified
+$ dvc fetch -aT # -aT flags to get the DVC-tracked data from all Git branches and tags from remote storage to the cache
+$ dvc checkout # gets the old data
+$ git commit -m # commits changes
+$ dvc push # to push to the remote storage
+$ gp origin main     # update remote
 ```
+
+At the source directory ................
+
+```console
+$ git checkout <SHA1> of the version that you want </file.dvc> # put you at that version
+$ dvc checkout # checkout the version
+$ cat <filename> to see the new version
+```
+
+- Though the data is version controlled, this first option does not allow us to track where the file came from.
+
+### dvc import
