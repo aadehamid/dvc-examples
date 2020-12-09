@@ -1,3 +1,10 @@
+md5: 0ffedacb65412ccbf7226658833b688e
+frozen: true
+deps:
+- path: getDVCImport/dvc_import.txt
+  repo:
+    url: https://github.com/aadehamid/dvc-examples.git
+    rev_lock: a48eba3c55927dbcf18dbd510a119317bee7cd6e
 outs:
 - md5: 5db20ff3fd20f7e40ba79e55895f8aef
   size: 36
