@@ -72,3 +72,12 @@ $ git push -u origin main #
 - Examine the remote branch
 
 # Sharing datasets and files
+
+You can download data from a repo into your local directory. As long as the data in that repo is dvc tracked. You
+
+```console
+$ dvc get <remote url < to the data.dvc>  # Option 1
+$ dvc add newTxt.txt #  add the file to dvc to track the data
+$ git add newTxt.txt.dvc .gitignore # start tracking the file
+$ dvc push # add to remote
+```
