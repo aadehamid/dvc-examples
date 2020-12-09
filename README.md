@@ -81,3 +81,11 @@ $ dvc add newTxt.txt #  add the file to dvc to track the data
 $ git add newTxt.txt.dvc .gitignore # start tracking the file
 $ dvc push # add to remote
 ```
+
+- Let us make some changes to this file we just downloaded.
+
+```console
+$ dvc add newTxt.txt #  add the file to dvc to track the data
+$ git add newTxt.txt.dvc .gitignore # start tracking the file
+$ dvc push # add to remote
+```
