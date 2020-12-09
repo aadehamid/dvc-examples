@@ -1,0 +1,4 @@
+outs:
+- md5: 5db20ff3fd20f7e40ba79e55895f8aef
+  size: 36
+  path: dvc_import.txt
