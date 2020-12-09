@@ -1,0 +1,4 @@
+outs:
+- md5: 313558ef7a57a15facd9595c07351f79
+  size: 9
+  path: newTxt.txt
