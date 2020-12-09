@@ -153,5 +153,6 @@ $ dvc push
 $ # checkout the version that you want
 $ git checkout <SHA1 of the version></SHA1>
 $ dvc checkout # will give you this version
-
 ```
+
+# DVC API
