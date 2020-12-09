@@ -89,3 +89,13 @@ $ dvc add newTxt.txt #  add the file to dvc to track the data
 $ git add newTxt.txt.dvc .gitignore # start tracking the file
 $ dvc push # add to remote
 ```
+
+- Both the source repo and target repo now have access to this file.
+
+```console
+$ cat newTxt.txt     # display the new text in the target directory
+$ cat newData/newTxt.txt # display the old file in the source directroy.
+
+$ git pull # update the source directory to reflect the changes
+$ # youshould now have a
+```
