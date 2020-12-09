@@ -117,4 +117,41 @@ $ cat <filename> to see the new version
 
 - Though the data is version controlled, this first option does not allow us to track where the file came from.
 
-### dvc import
+### dvc import - Option 2
+
+- This option will help track where we download the data from
+- we can actually update the exact same file
+
+```console
+$ # Update the repos < git push or git push>
+$ dvc import https://github.com/aadehamid/dvc-examples.git \                  ✔  7183  06:30:36
+> getDVCImport/dvc_import.txt -o dvc_import.txt
+$ # if sometimes has passed and you have not pushed to the repo and  the file was modified by the owner and version controlled. you can use the below command to update the imported file.
+$ dvc update </file.dvc>
+$ git add dvc_import.txt.dvc
+$ git commit -m <msg></msg>
+$ dvc push
+$ cat dvc_import.txt.dvc   # Metadat information on where we got the data from
+```
+
+# Let us modify the file we just imported
+
+### Target
+
+```console
+$ dvc add dvc_import.txt   # adds after the file is updated
+$ git add dvc_import.txt.dvc # set up for git versioning
+$ git commit -m "first time: Modified the raw file for dvcImport demo"
+$ dvc push
+```
+
+### Source
+
+- At the source we first update git with {git pull and/or push} and dvc with {dvc fetch -aT}
+
+```console
+$ # checkout the version that you want
+$ git checkout <SHA1 of the version></SHA1>
+$ dvc checkout # will give you this version
+
+```
